@@ -1,3 +1,5 @@
+const flatpickr = require('flatpickr');
+import flatpickr from 'flatpickr';
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
