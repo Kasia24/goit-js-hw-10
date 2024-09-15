@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="../js/01-timer.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -23,8 +24,8 @@
     />
 
     <main>
-      <input type="text" id="datetime-picker" placeholder="Wybierz datę" />
-      <button type="button" disabled>Start</button>
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start disabled>Start</button>
       <div id="countdown"></div>
 
       <div class="timer">
@@ -48,7 +49,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/izit"></script>
-    <script src="../js/01-timer.js"></script>
     <load src="./partials/footer.html" />
   </body>
 </html>
