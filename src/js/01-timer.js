@@ -34,7 +34,7 @@ const options = {
   },
 };
 
-flatpickr(datetimePicker, options);
+flatpickr(dateTimePicker, options);
 
 function updateTimer() {
   const now = new Date().getTime();
