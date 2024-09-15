@@ -4,6 +4,7 @@ const daysElement = document.querySelector('[data-days]');
 const hoursElement = document.querySelector('[data-hours]');
 const minutesElement = document.querySelector('[data-minutes]');
 const secondsElement = document.querySelector('[data-seconds]');
+const countdownElement = document.getElementById('countdown');
 
 let selectedDate = null;
 let timerInterval = null;
