@@ -20,12 +20,25 @@ document
       }, delay);
     });
 
-    // Obsługa wyniku obietnicy
     promise
       .then(delay => {
-        console.log(`✅ Fulfilled promise in ${delay}ms`);
+        iziToast.success({
+          title: 'Success',
+          message: `Fulfilled promise in ${delay}ms`,
+        });
       })
       .catch(delay => {
-        console.log(`❌ Rejected promise in ${delay}ms`);
+        iziToast.error({
+          title: 'Error',
+          message: `Rejected promise in ${delay}ms`,
+        });
       });
+  });
+// Obsługa wyniku obietnicy
+promise
+  .then(delay => {
+    console.log(`✅ Fulfilled promise in ${delay}ms`);
+  })
+  .catch(delay => {
+    console.log(`❌ Rejected promise in ${delay}ms`);
   });
