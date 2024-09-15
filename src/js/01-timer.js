@@ -1,3 +1,6 @@
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
+
 const startButton = document.querySelector('button[data-start]');
 const dateTimePicker = document.getElementById('datetime-picker');
 const daysElement = document.querySelector('[data-days]');
@@ -61,7 +64,10 @@ function startTimer() {
 }
 
 // Obsługa kliknięcia przycisku Start
-startButton.addEventListener('click', startTimer);
+startButton.addEventListener('click', () => {
+  startButton.disabled = true; // Dezaktywuj przycisk
+  startCountdown(); // Uruchom licznik czasu
+});
 
 // Funkcja do formatowania liczb
 function addLeadingZero(value) {
