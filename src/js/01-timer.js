@@ -2,7 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
 const startButton = document.querySelector('button[data-start]');
-const dateTimePicker = document.getElementById('datetime-picker');
+const datetimePicker = document.getElementById('datetime-picker');
 const daysElement = document.querySelector('[data-days]');
 const hoursElement = document.querySelector('[data-hours]');
 const minutesElement = document.querySelector('[data-minutes]');
@@ -34,7 +34,7 @@ const options = {
   },
 };
 
-flatpickr(dateTimePicker, options);
+flatpickr(datetimePicker, options);
 
 function updateTimer() {
   const now = new Date().getTime();
