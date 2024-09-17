@@ -5,7 +5,7 @@ document
 
     // Pobranie wartości wprowadzonych przez użytkownika
     const delay = document.getElementById('delay').value;
-    const promiseResult = document.querySelector(
+    const state = document.querySelector(
       'input[name="promiseResult"]:checked'
     ).value;
 
@@ -33,12 +33,4 @@ document
           message: `Rejected promise in ${delay}ms`,
         });
       });
-  });
-// Obsługa wyniku obietnicy
-promise
-  .then(delay => {
-    console.log(`✅ Fulfilled promise in ${delay}ms`);
-  })
-  .catch(delay => {
-    console.log(`❌ Rejected promise in ${delay}ms`);
   });
