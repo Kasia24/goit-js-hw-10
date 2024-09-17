@@ -66,7 +66,7 @@ function startTimer() {
 // Obsługa kliknięcia przycisku Start
 startButton.addEventListener('click', () => {
   startButton.disabled = true; // Dezaktywuj przycisk
-  startCountdown(); // Uruchom licznik czasu
+  startTimer(); // Uruchom licznik czasu
 });
 
 // Funkcja do formatowania liczb
